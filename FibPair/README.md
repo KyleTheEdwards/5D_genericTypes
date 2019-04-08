@@ -21,9 +21,9 @@ in [UserSavedByCompiler](https://github.com/stuyvesant-cs/solutionsHolmes/blob/2
 
 - definition that a class / type that is parameterized by a generic type, `T`:
 ```
-your exemplifying line from the Pair example here
+public class Pair<T>
 ```
-in [class](URL)
+in [Pair]()
 
 
 - declaration of a variable that can hold a reference to an instance
@@ -83,5 +83,3 @@ in [class](URL)
 your exemplifying line from the Pair example here
 ```
 in [class](URL)
-
-
