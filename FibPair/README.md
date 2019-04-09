@@ -23,42 +23,42 @@ in [UserSavedByCompiler](https://github.com/stuyvesant-cs/solutionsHolmes/blob/2
 ```
 public class Pair<T>
 ```
-in [Pair]()
+in [Pair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/Pair.java#L8)
 
 
 - declaration of a variable that can hold a reference to an instance
 of such a class:
 ```
-your exemplifying line from the Pair example here
+Pair<Integer> fibPairs = new Pair<Integer>(1, 0);
 ```
-in [class](URL)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L86)
 
 
 - assignment to such a variable:
 ```
-your exemplifying line from the Pair example here
+Pair<Integer> fibPairs = new Pair<Integer>(1, 0);
 ```
-in [class](URL)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L86)
 
 
 - declaration of a method that returns an instance of such a type:
 ```
-your exemplifying line from the Pair example here
+public T getFirst()  { return first; }
 ```
-in [class](URL)
+in [Pair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/Pair.java#L18)
 
 
 - successful instantiation of an instance of such a class:
 ```
-your exemplifying line from the Pair example here
+fibPairs.getFirst();
 ```
-in [class](URL)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L90)
 
 
 - *un*successful instantiation of an instance of such a class,
 caught by the compiler:
 ```
-your exemplifying line from the Pair example here
+Pair pier = new Pair(7,3);
 ```
 in [class](URL)
 

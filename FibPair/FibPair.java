@@ -6,19 +6,21 @@ public class FibPair {
     public static void main(String[] commandLine) {
         System.out.println();
 
+        //Pair pier = new Pair(7,3);
+
         // calculate next pair, Fibonacci-style
         nextText( 8, 5, "[13,8]");
         nextText( 3, 2, "[5,3]");
 
         /* optional extra education: Fibonacci numbers
            recursively, and in linear time */
-        // oneFib(  0, 0);  // base case
-        // oneFib(  1, 1);  // smallest recursive case, or base case
-        // oneFib(  2, 1);  // recursive case, sometimes smallest
-        // oneFib(  7, 13); // recursive case
+        oneFib(  0, 0);  // base case
+        oneFib(  1, 1);  // smallest recursive case, or base case
+        oneFib(  2, 1);  // recursive case, sometimes smallest
+        oneFib(  7, 13); // recursive case
 
-        // System.out.println( "no noticeable delay before...");
-        // oneFib( 46, 1836311903);
+        System.out.println( "no noticeable delay before...");
+        oneFib( 46, 1836311903);
           /* value from
              stackoverflow.com/questions/15065088/upper-limits-for-fibonnacci
              but adjusted because they index from 1. Who ARE these people?
@@ -53,8 +55,8 @@ public class FibPair {
         the big number is the sum of the given pair
         the small number is the the old big number
      */
-    private static Pair<Integer> nextPairAfter(Pair oldPair<Integer>) {
-        Pair<Integer> newPair = new Pair<Integer>(oldPair.getFirst() + oldPair.getSecond(), oldPair.getFirst());
+    private static Pair<Integer> nextPairAfter(Pair<Integer> oldPair) {
+        Pair<Integer> newPair = new Pair<Integer>((oldPair.getFirst() + oldPair.getSecond()), oldPair.getFirst());
         return newPair;
     }
 
@@ -83,7 +85,7 @@ public class FibPair {
               n >= 0
      */
     private static Integer fib( int n) {
-        Pair<Integer> fibPairs = new Pair<Integer>(1, 0);
+        Pair<Integer> fibPairs = new Pair<Integer>(0, 1);
         for(int x = 0; x < n; x++){
           fibPairs = nextPairAfter(fibPairs);
         }
