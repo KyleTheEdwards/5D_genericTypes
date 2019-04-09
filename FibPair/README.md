@@ -29,16 +29,16 @@ in [Pair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b
 - declaration of a variable that can hold a reference to an instance
 of such a class:
 ```
-Pair<Integer> fibPairs = new Pair<Integer>(1, 0);
+Pair<Integer> fibPairs = new Pair<Integer>(0, 1);
 ```
-in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L86)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L88)
 
 
 - assignment to such a variable:
 ```
-Pair<Integer> fibPairs = new Pair<Integer>(1, 0);
+Pair<Integer> fibPairs = new Pair<Integer>(0, 1);
 ```
-in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L86)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L88)
 
 
 - declaration of a method that returns an instance of such a type:
@@ -52,7 +52,7 @@ in [Pair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b
 ```
 fibPairs.getFirst();
 ```
-in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L90)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L92)
 
 
 - *un*successful instantiation of an instance of such a class,
@@ -60,7 +60,7 @@ caught by the compiler:
 ```
 Pair pier = new Pair(7,3);
 ```
-in [class](URL)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L9)
 
 
 - a variable that can hold a reference to an instance of the generic type
@@ -73,13 +73,13 @@ in [class](URL)
 
 - the declaration of a method that accepts a parameter of a generic type:
 ```
-your exemplifying line from the Pair example here
+private static Pair<Integer> nextPairAfter(Pair<Integer> oldPair)
 ```
-in [class](URL)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L58)
 
 
 - the declaration of a method that returns a value of a generic type:
 ```
-your exemplifying line from the Pair example here
+private static Integer fib( int n) {
 ```
-in [class](URL)
+in [FibPair](https://github.com/KyleTheEdwards/5D_genericTypes/blob/4d799584bb3099b03da35d596efe908af9975ef8/FibPair/FibPair.java#L87)

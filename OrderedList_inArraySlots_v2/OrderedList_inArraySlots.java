@@ -6,13 +6,15 @@
   List_inArraySlots
  */
 
-public class OrderedList_inArraySlots
-    implements OrderedList {
+import java.util.ArrayList;
 
-    private ?? Java-standard ArrayList here ?? list_iAS;
+public class OrderedList_inArraySlots
+    implements OrderedList{
+
+    private ArrayList<Integer> list_iAS;
 
     public OrderedList_inArraySlots() {
-        list_iAS = new List_inArraySlots();
+        list_iAS = new ArrayList<Integer>();
     }
 
     /**
